@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".two">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".two"
+    android:orientation="vertical">
 
    <HorizontalScrollView
        android:layout_width="fill_parent"
@@ -35,4 +37,354 @@
        </LinearLayout>
    </HorizontalScrollView>
 
-</FrameLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextAppearance="@style/tab_text"
+        android:theme="@style/TabTheme"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:text="액티비티"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="호텔"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="항공권"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"
+        android:text="액티비티"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="28dp"
+            android:textColor="@color/tripBlue"
+            android:textSize="14dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="#CEDEEF"
+            android:layout_marginLeft="20dp"
+            android:text="서울" />
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="28dp"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:text="제주" />
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="28dp"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:text="부산" />
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="28dp"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:text="도쿄" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="28dp"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:text="오사카" />
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="28dp"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginLeft="12dp"
+        android:text="세부" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/firstLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageIcon"
+                        android:layout_width="100dp"
+                        android:layout_height="202dp"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginRight="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@+id/imageIcon"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name_pro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="용인에버랜드 입장권" />
+
+                        <TextView
+                            android:id="@+id/score_pro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="5.0/5"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageIcon"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/more_pro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="인기상품"
+                            android:textSize="15sp"/>
+                        <TextView
+                            android:id="@+id/price_pro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22,900원"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tripGray"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageIcon2"
+                    android:layout_width="100dp"
+                    android:layout_height="202dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/imageIcon2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="서울 N서울타워 전망대 입장권" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="4.6/5"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageIcon2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="-60dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="39%할인"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6,035원"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tripGray"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageIcon3"
+                    android:layout_width="100dp"
+                    android:layout_height="202dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/imageIcon3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="서울 N서울타워 전망대 입장권" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="4.6/5"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageIcon3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="-60dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="39%할인"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6,035원"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tripGray"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="더보기"
+        android:textColor="@color/tripBlue"
+        android:background="@drawable/button_selector"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+</LinearLayout>

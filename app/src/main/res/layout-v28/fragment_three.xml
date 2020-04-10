@@ -73,9 +73,9 @@
             android:scaleType="centerCrop"
             android:src="@drawable/mytrip_pic1"/>
         <View
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/pic_gradient1"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pic_gradient1"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -167,9 +167,9 @@
     </LinearLayout>
 
     <HorizontalScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="230dp"
-        android:paddingTop="10dp">
+        android:layout_width="566dp"
+        android:layout_height="366dp"
+        android:paddingTop="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -177,8 +177,8 @@
             android:orientation="horizontal">
 
             <FrameLayout
-                android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="20dp">
                 <ImageView
@@ -195,15 +195,15 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
                     android:layout_marginBottom="15dp"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:textColor="#FFFFFF"
                     android:text="인천" />
 
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="10dp">
                 <ImageView
@@ -220,14 +220,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
                     android:layout_marginBottom="15dp"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:textColor="#FFFFFF"
                     android:text="여수" />
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="10dp">
                 <ImageView
@@ -244,17 +244,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
                     android:layout_marginBottom="15dp"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:textColor="#FFFFFF"
                     android:text="경주" />
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="20dp">
+                android:layout_marginLeft="10dp">
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -269,7 +268,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|bottom"
                     android:layout_marginBottom="15dp"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:textColor="#FFFFFF"
                     android:text="수원" />
             </FrameLayout>
